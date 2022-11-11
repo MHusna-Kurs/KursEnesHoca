@@ -1,0 +1,7 @@
+C:\Users\mehmet.kisla\source\repos\11_11_2022\11_11_2022\bin\Debug\11_11_2022.exe.config
+C:\Users\mehmet.kisla\source\repos\11_11_2022\11_11_2022\bin\Debug\11_11_2022.exe
+C:\Users\mehmet.kisla\source\repos\11_11_2022\11_11_2022\bin\Debug\11_11_2022.pdb
+C:\Users\mehmet.kisla\source\repos\11_11_2022\11_11_2022\obj\Debug\11_11_2022.csprojAssemblyReference.cache
+C:\Users\mehmet.kisla\source\repos\11_11_2022\11_11_2022\obj\Debug\11_11_2022.csproj.CoreCompileInputs.cache
+C:\Users\mehmet.kisla\source\repos\11_11_2022\11_11_2022\obj\Debug\11_11_2022.exe
+C:\Users\mehmet.kisla\source\repos\11_11_2022\11_11_2022\obj\Debug\11_11_2022.pdb

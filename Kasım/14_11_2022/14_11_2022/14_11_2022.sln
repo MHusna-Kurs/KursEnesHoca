@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.960
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_11_2022", "14_11_2022\14_11_2022.csproj", "{FC028308-EDCA-46D0-A71C-B351CA9D568E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_11_2022_v2", "14_11_2022_v2\14_11_2022_v2.csproj", "{DBA1EC90-CDAC-4303-8F5A-C32DC98993E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_11_2022_v3", "14_11_2022_v3\14_11_2022_v3.csproj", "{06617BAB-F2B9-452F-B55D-6C357364019E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{FC028308-EDCA-46D0-A71C-B351CA9D568E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC028308-EDCA-46D0-A71C-B351CA9D568E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC028308-EDCA-46D0-A71C-B351CA9D568E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBA1EC90-CDAC-4303-8F5A-C32DC98993E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA1EC90-CDAC-4303-8F5A-C32DC98993E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA1EC90-CDAC-4303-8F5A-C32DC98993E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA1EC90-CDAC-4303-8F5A-C32DC98993E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06617BAB-F2B9-452F-B55D-6C357364019E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06617BAB-F2B9-452F-B55D-6C357364019E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06617BAB-F2B9-452F-B55D-6C357364019E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06617BAB-F2B9-452F-B55D-6C357364019E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

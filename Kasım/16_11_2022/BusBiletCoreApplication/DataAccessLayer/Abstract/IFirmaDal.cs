@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DataAccessLayer.Abstract
 {
-    interface IFirmaDal:IGenericDal<Firma>
+    public interface IFirmaDal:IGenericDal<Firma>
     {
     }
 }

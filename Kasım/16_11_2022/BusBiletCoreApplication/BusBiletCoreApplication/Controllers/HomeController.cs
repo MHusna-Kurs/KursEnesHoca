@@ -5,13 +5,18 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BusBiletCoreApplication.Models;
+using BusinessLayer;
+using DataAccessLayer.Concrete.EntityFramework;
 
 namespace BusBiletCoreApplication.Controllers
 {
     public class HomeController : Controller
     {
+        FirmaManager firma = new FirmaManager(new EfFirmaRepository());
+
         public IActionResult Index()
         {
+            var liste = firma.firmaListele();
             return View();
         }
 

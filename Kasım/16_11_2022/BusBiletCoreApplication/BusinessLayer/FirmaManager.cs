@@ -1,38 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
 using EntityLayer;
 
 namespace BusinessLayer
 {
-    class FirmaManager : IFirmaServis
+    public class FirmaManager : IFirmaServis
     {
-        GenericRepository<Firma> genericRepository;
+        IFirmaDal firmaDal;
 
-        public FirmaManager(GenericRepository<Firma> genericRepository)
+        public FirmaManager(IFirmaDal firmaDal)
         {
-            this.genericRepository = genericRepository;
+            this.firmaDal = firmaDal;
         }
 
         public void firmaEkle(Firma firma)
         {
-            genericRepository.insert(firma);
+            firmaDal.insert(firma);
         }
 
         public void firmaGuncelle(Firma firma)
         {
-            genericRepository.update(firma);
+            firmaDal.update(firma);
         }
 
         public List<Firma> firmaListele()
         {
-            return genericRepository.list();
+            return firmaDal.list();
         }
 
         public void firmaSil(Firma firma)
         {
-            genericRepository.delete(firma);
+            firmaDal.delete(firma);
         }
     }
 }

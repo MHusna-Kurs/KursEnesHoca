@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataAccessLayer.Abstract
 {
-    interface IGenericDal<T>
+    public interface IGenericDal<T>
     {
         void insert(T entity);
         void delete(T entity);

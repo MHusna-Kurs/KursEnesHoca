@@ -1,0 +1,97 @@
+	Global ip'miz modemin ip'si fakat o modeme bağlı olan cihazların kendi local ip'leri var.
+
+<title>Ana Sayfa</title>
+-------------------------
+	Sekme başlığı atar.
+
+###############################################################################################
+
+<meta name="robots" content="all"> : izin vermek istemezsen content="none" yap.
+-----------------------------------
+	Arama motoru botları tarafından bir web sayfasının taranması 
+ve dizine eklenmesi işlemi indexing olarak adlandırılır. Daha sonra 
+dizine eklenen bu web sayfaları çeşitli kriterler doğrultusunda 
+değerlendirilerek arama motoru sonuç sayfaları aracılığı ile 
+kullanıcılara sunulur.
+
+###############################################################################################
+
+LİSTELER
+---------
+	Liste etiketleri body etiketleri arasında yazılırlar.
+
+<!-- Sıralı Listeler -->
+	<ol>
+		<li>İstanbul</li>
+		<li>Ankara</li>
+		<li>Düzce</li>
+	</ol>
+
+ol'nin type özelliği ile şeklini belirtebiliriz, start ile başlangıç indexi belirtebiliriz: 
+	<ol type="A" start=3>
+
+###############################################################################################
+
+<!-- Sırasız Listeler -->
+	<ul>
+		<li>İstanbul</li>
+		<li>Ankara</li>
+		<li>Düzce</li>
+	</ul>
+
+	Sırasız listelerin type özelliği 3 tanedir; square, circle, disc. Varsayılan olarak disc tipinde geliyor.
+	Kullanım Örneği: <ul type="square">
+
+
+###############################################################################################
+
+
+BAŞLIKLAR
+----------
+
+h1 > h2 > h3 > h4 > h5 > h6
+
+	Etiketler google aramalarında önemli. Google, başlıklara göre arama yapıyor.
+
+###############################################################################################
+
+ETİKETLER
+---------
+
+<p></p> -> Paragraf
+<b></b> -> Kalın yazı.
+<i></i> -> İtalik yazı.
+<br> -> Alt satıra geçer.
+<hr> -> Çizgi çeker, size, width ve align özelliği var.
+
+<a href="https://www.google.com">Google'ye Git</a>
+
+	https ekledik ki ftp olmadığını anlasın diye.
+
+###############################################################################################
+
+<a href="resim.PNG" target="blank">Resimi yeni sekmede aç.</a>
+
+	target="blank" özelliği resimin yeni sekmede açılmasını sağlar.
+
+
+###############################################################################################
+
+TABLOLAR
+---------
+
+<table></table> etiketleri arasında oluşturulur.
+<tr></tr>: Satır oluşturma
+<td></td>: Sutun oluşturma
+<th></th>: Başlık oluşturma
+
+Table'in altında tr, tr'nin içinde td oluyor. th de tr içinde oluyor.
+
+colspan = Sütun yani 1. kolonla 2. kolonu yatayda birleştirme
+rowspan = Satır yani 1. satırla 2. satırı dikeyde birleştirme
+
+cellspacing = Hücre boşluğu
+
+Margin = Dışarı olan uzaklığı
+Padding = İçeri doğru olan uzaklığı
+cellspacing = hücrenin table borderine olan margin'i. Tablo içindeki yapılardan oluştuğu için bu yapı tabloya özel.

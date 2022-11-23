@@ -95,3 +95,5 @@ cellspacing = Hücre boşluğu
 Margin = Dışarı olan uzaklığı
 Padding = İçeri doğru olan uzaklığı
 cellspacing = hücrenin table borderine olan margin'i. Tablo içindeki yapılardan oluştuğu için bu yapı tabloya özel.
+	      Hücrenin tablo kenarına olan uzaklığı.
+cellpadding = Hücre kenarının yazıya olan uzaklığı.

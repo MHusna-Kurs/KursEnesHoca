@@ -1,0 +1,91 @@
+<form action="url" method="post"></form>
+
+	action ile butona tıklandığında hangi sayfanın açılmasını istiyorsan onu yaz.
+	method post olursa yukarıda gönderdiğimiz değerler gözükür, get'de gözükmez.
+
+<input type="text" name="elemanIsmi" checked="on">
+	
+	Form etiketleri arasında kullandık.
+	type ile bunun ne input alacağını söylüyoruz; checkbox, text... olabilir.
+	name'de de inputtan alınan değeri saklıyoruz.
+	checked="on" olursa checkbox seçili gelir.
+
+
+<input type="radio" id="btn1" name="radb">Evli</input><br>
+
+	Aynı gruptaki elemanlar için radiobutton'da id'ler farklı name özellikleri aynı olmalı.,
+
+<textarea name="adres" rows="5" cols="30"> </textarea>
+
+	Büyük textbox oluşturma etiketi. 5 satır ve 30 sütun kaplıyor.
+
+<input type="reset" value="Temizle">
+
+	reset type önemli..
+
+strong -> kalın
+em -> italik
+mark -> highlighted yapar
+small -> küçük
+del -> üstü çizilmiş
+ins -> altı çizilmiş
+sub -> Altına yazar
+sup -> Üstüne yazar
+blockquote -> Tab atmış gibi yazar
+q -> alıntı yani tırnak içine alır
+diğerlerine w3'den bak.
+
+
+#######################################################################################################
+
+divin içine her şeyi koyabiliriz.
+div iki tiptir: block level: yanına bişey koyamazsın
+		inline level: yanına bişey koyabilirsin
+
+
+#######################################################################################################
+
+css 3 şekilde tanımlanır: inline, internal, external.
+
+seçiciler: element seçici (p, h etiketleri gibi), class seçiciler, id seçiciler.
+
+
+INLINE KULLANIM
+---------------
+	<div style="color:red;">Dinliyor musunuz ?</div>
+
+display:inline; -> komutu ile varsayılan olarak block level div'i, inline level'e çeviriyoruz.
+font-family -> Yazı tipi
+font-size -> Yazı büyüklüğü
+font-weight:bold -> Yazı kalınlığı cart curt.
+font-style:italic -> Italic yapmak için.
+text-align:center -> Yazı ortalama kodudur. Itemi ortalamaz sadece yazıyı ortalar. Yani block level div'de
+		     yazıyı ortaladığını görebilirken, inline level div'de bişey göremeyiz.
+
+##################################################################################################  
+
+Ölçü birimleri
+--------------
+Tarayıcıların varsayılan olarak ölçü birimi px'dir.
+16px = 1 em varsayılan yazı büyüklüğü 16px
+
+##################################################################################################  
+
+background-image:url(resim.png);
+background-repeat:no-repeat;
+background-repeat:repeat-x;
+		  repeat-y;
+background-position: center left -> arkaplan pozisyonu
+background-position: 50% 80%;
+background-attachment:scroll;
+
+
+##################################################################################################  
+
+text-decoration:underline;
+		line-through;
+
+vertical align --> Metinin resme göre hizalanmasını sağlar.
+
+
+

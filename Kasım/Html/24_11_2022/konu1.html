@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="all">
+		<title>24 11 2022</title>
+	</head>
+	<body>
+		<form action="url" method="post">
+			<h4>M.E.B. Personel Bilgileri:</h4>
+			TC Kimlik No: <input type="text" name="tcNo"><br><br>
+			Adı: <input type="text" name="kAdı"><br><br>
+			Soyadı: <input type="text" name="kSoyad"><br><br>
+			Görevi: <input type="text" name="kGorev"><br><br>
+			<input type="submit" value="Giriş Yap"></input>
+			
+			<!-- ##################################################### -->
+			
+			<h4>Hobileriniz</h4>
+			<input type="checkbox" name="cbxInternet" checked="on">İnternet</input><br>
+			<input type="checkbox" name="cbxMuzik">Müzik</input><br>
+			<input type="checkbox" name="cbxSpor" checked="on">Spor</input><br>
+			<input type="checkbox" name="cbxTv">Televizyon</input><br>
+			
+			<!-- ##################################################### -->
+			
+			<h4>Medeni Halinizi Seçiniz:</h4>
+			<input type="radio" id="btn1" name="radb">Evli</input><br>
+			<input type="radio" id="btn2" name="radb">Bekar</input><br>
+			<input type="radio" id="btn3" name="radb">Boşanmış</input><br>
+			<input type="radio" id="btn4" name="radb">Dul</input><br>
+			
+			<!-- ##################################################### -->
+			
+			<h4>Adresiniz:</h4>
+			<textarea name="adres" rows="5" cols="30"> </textarea>
+			<br>
+			
+			<!-- ##################################################### -->
+			
+			<select>
+				<option>İstanbul</option>
+				<option>Ankara</option>
+				<option>Malatya</option>
+				<option>Siirt</option>
+			</select>
+			
+			<!-- ##################################################### -->
+			
+			<table border="1">
+				<tr>
+					<th>Kullanıcı Bilgileri</th>
+					<th colspan="4"></th>
+				</tr>
+				<tr>
+					<td>Adı:</td>
+					<td><input type="text" name="kAdı"></td>
+				</tr>
+				<tr>
+					<td>Soyadı:</td>
+					<td><input type="text" name="kSoyadı"></td>
+				</tr>
+				<tr>
+					<td>Cinsiyeti:</td>
+					<td colspan="4">
+						ERKEK<input type="radio" id="rad1" name="cinsiyet">
+						KADIN<input type="radio" id="rad2" name="cinsiyet" checked="on">
+					</td>
+				</tr>
+				<tr>
+					<td>Doğum Yeri:</td>
+					<td colspan="4">
+						<select>
+							<option>İzmir</option>
+							<option>İstanbul</option>
+							<option>Ankara</option>
+							<option>Malatya</option>
+							<option>Siirt</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Doğum Tarihi:</td>
+					<td colspan="4">
+						<select name="gun">
+							<option>Gün</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+						</select>
+						<select name="ay">
+							<option>Ay</option>
+							<option>Ocak</option>
+							<option>Şubat</option>
+							<option>Mart</option>
+							<option>Nisan</option>
+						</select>
+						<select name="yil">
+							<option>Yıl</option>
+							<option>2000</option>
+							<option>2001</option>
+							<option>2002</option>
+							<option>2003</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="Kaydet">
+						<input type="reset" value="Temizle">
+					</td>
+				</tr>
+			</table>
+		</form>
+		
+		<img src="resim.png" width="150px" height="150px">
+		
+		
+		
+	</body>
+</html>

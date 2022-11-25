@@ -1,0 +1,27 @@
+INTERNAL CSS TANIMLAMA
+------------------------
+. ile class belirtiyoruz.
+
+HEAD İÇİNDE CSS TANIMLAMA
+<style>
+	.kutu1{}
+	.kutu2{}
+	.kutu3{}
+</style>
+
+ÇAĞIRIRKEN DE: <div class="kutu1">Kutu 1</div>
+
+--> Float özelliği bir div'in solda mı sağda mı olacağını belirtir.
+--> Div'ler bir önceki div'in float özelliğinden etkilenirler. Etkilenmesin istiyorsan clear:both; yapıcan.
+
+
+table td  -> table'nin içindeki td'lere yap demek
+table, td -> table'a ve td'ye uygula demek.
+
+<table border="1px"> yapınca hem hücrelere hem tabloya kenar verir. Yani collapse ile birlikte gelir.
+
+style'de border-collapse:collapse; yapınca ve <table border="1px"> yapınca ikisini birleştirir, tek çizgili
+yapar.
+
+relative ilişkilendirir, absolute kesin yer belirtiyor. Kati demek.
+

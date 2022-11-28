@@ -1,0 +1,11 @@
+position:relative -> referans alınacak yeri belirtiyor.
+position:absolute -> referans alan yeri belirtiyor.
+
+sadece position:relative yaparsak div hareket eder fakat gölgesi eski yerinde kalır. Dolayısıyla eski yeri
+dolmaz.
+
+position:sticky -> sayfada scroll atarken bizimle aşağı yukarı gelmesini sağlar.
+
+z-index -> üst üste gelen divlerde hangisinin üstte gözükeceğini belirler. index değeri büyük olan en üstte
+	   gözükür.
+	   En arkası -1 oluyor, altta kalacak dive 0 verdik.

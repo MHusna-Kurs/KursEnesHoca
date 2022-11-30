@@ -1,0 +1,64 @@
+https://www.yusufsezer.com.tr/css3-flexbox/
+https://cssreference.io/flexbox/ --> Örnekli site
+
+display: flex -> Esnek olmasını sağlar
+direction: ltr -> elemanları soldan sağa sıralar
+direction: rtl -> elemanları sağdan sola sıralar
+
+flex-direction hem dikeyde hem yatayda hizalıyor.
+row: soldan sağa (row-reverse tam tersi) row deyince satırda gidiyor
+column: yukardan aşşa (column-reverse tam tersi) column deyince sütunda gidiyor.
+
+
+Yatay hizalamak
+-----------------
+Flex uygulanmış elemanları yatay olarak hizalamak için justify-content özelliği kullanılır.
+
+Aldığı değerler;
+
+flex-start: Elemanlar kapsayıcının başından başlayarak hizalanır. (Varsayılan)
+flex-end: Elemanlar kapsayıcının sonundan başlayarak hizalanır.
+center: Elemanlar kapsayıcının ortasından başlayarak hizalanır.
+space-between: Elemanlardan ilk kutu kapsayıcının başında, son kutu kapsayıcının sonunda olacak şekilde eşit olarak hizalanır.
+space-around: Elemanlar arası boşluk eşit olacak şekilde hizalanır.
+
+
+############################################################################################################
+
+Dikey hizalamak
+---------------
+Flex özelliği uygulanmış elemanları dikey olarak hizalamak için align-items özelliği kullanılır.
+
+Aldığı değerler;
+
+flex-start: Elemanlar kapsayıcının başından başlayarak hizalanır.
+flex-end: Elemanlar kapsayıcının altından başlayarak hizalanır.
+center: Elemanlar kapsayıcının ortasına başlayarak hizalanır.
+baseline: Elemanlar yazı boyutlarına göre hizalanır.
+stretch: Elemanların yüksekliği kapsayıcının yüksekliği kadar olur. (Varsayılan)
+NOT: Elemanları dikey hizalamak için kapsayıcıya yükseklik değeri verilmesi gerekir.
+
+############################################################################################################
+
+
+Taşmaları kontrol etmek
+-----------------------
+Varsayılan olarak elemanlar kapsayıcı içerisinde bir satır boyunca yerleştirilir demiştik.
+
+Kapsayıcıya yeni eleman eklendikçe elemanlar satır boyunca devam edecektir.
+
+Eklenen elemanlar kapsayıcı genişliğini aştığında yeni satırda başlaması için flex-wrap özelliğini kullanılır.
+
+Aldığı değerler;
+
+nowrap: Elemanlar tek satırda soldan sağa sıralanır. (Varsayılan)
+wrap: Elemanlar kapsayıcı genişliğini aştığında yeni satırda sıralanmaya başlar.
+wrap-reverse: Elemanlar kapsayıcı genişliğini aştığında son eklenen eleman üst satırdan başlayarak sıralanmaya başlar.
+
+############################################################################################################
+
+overflow -> Birşeyler taştıktan sonra ne olsun onu yapar 4 tane parametre alır.
+	    Defaultu visible.
+	    Parametreler: visible, hidden, scroll, auto.
+
+class - id farkı gösterilecek.

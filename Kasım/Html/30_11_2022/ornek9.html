@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>Örnek 8</title>
+		<style>
+			
+			.dropdown{
+				display: inline-block;
+				opacity: 0.6;
+			}
+		
+			.dropbtn{
+				display: inline-block;
+				width: 100px;
+			}
+			
+			.dropbtn a{
+				display: block;
+				text-decoration: none;
+				background-color: green;
+				padding: 10px;
+				color: white;
+				text-align: center;
+			}
+			
+			.dropdown-content{
+				display: none;
+			}
+			
+			.dropdown:hover{
+				opacity: 1;
+			}
+			
+			.dropdown:hover .dropdown-content{
+				display: block;
+				width: 100px;
+			}
+			
+			.dropdown-content a{
+				display: block;
+				background-color: green;
+				color: white;
+				border: 1px solid white;
+				text-decoration: none;
+				text-align: center;
+				line-height: 30px;
+			}
+			
+			.dropdown-content a:hover{
+				background-color: white;
+				color:green;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="dropdown">
+			<span class="dropbtn"><a href="#">Dropdown</a></span>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,13 @@
+29 11 2022
+###############################
+display flex
+justify content
+align items 
+
+GÖSTERİCEK HOCA UNUTTURMA
+
+transform: translate(-50%, -50%)
+Başlama noktasının verdiği dezavantajı düzelttik.
+
+div p:first-child{} -> her yapının içindeki ilk p elemanına etki eder.
+div p:first-child:hover -> ilk p'nin üstüne gelindiğinde.

@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Ornek 6</title>
+		
+		<style>
+			input [type=text]:enabled{
+				background: yellow;
+			}
+			
+			input [type=number]:disabled{
+				background: #dddddd;
+			}
+			
+			input:focus{
+				background: green;
+			}
+			
+			input:in-range{
+				border: 1px solid yellow;
+			}
+			
+			input:out-of-range{
+				border: 1px solid red;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<form action="">
+			First name: <input type="text" value="Mickey"><br>
+			Country: <input type="number" disabled="disabled" value="111"><br>
+			Country: <input type="number" min="0" max="100" value="1110"><br>
+		</form>
+	</body>
+</html>

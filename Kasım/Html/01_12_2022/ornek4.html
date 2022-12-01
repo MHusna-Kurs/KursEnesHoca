@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <title>W3SCHOOLS</title>
+        <style>
+            .container{
+                border: 1px solid rgb(185, 182, 182);
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background-color: white;
+                width: 250px;
+                height: 350px;
+                box-shadow: 5px 0px 10px 1px rgb(185, 182, 182);
+            }
+
+            h4{
+                text-align: center;
+                line-height: 3px;
+            }
+
+            .top-content p{
+                text-align: center;
+                line-height: 3px;
+                opacity: 0.7;
+            }
+
+            .center-content{
+                display: flex;
+                margin-bottom: 7%;
+            }
+
+            .circle{
+                background-color: transparent;
+                width: 100px;
+                height: 100px;
+                border: 3px solid;
+                border-left-color: aquamarine;
+                border-top-color: green;
+                border-right-color:yellow;
+                border-radius: 50%;
+                margin: auto;
+                position: relative;
+                z-index: 0;
+            }
+
+            .cakal{ 
+                width: 100px;
+                height: 50px;
+                position: absolute;
+                left: 83;
+                top: 130;
+                padding: 4px;
+                z-index: 1;
+                background-color: white;
+            }
+
+            .footer{
+                margin-top: 4%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .score-factors{
+                margin-left: 20px ;
+                opacity: 0.7;
+                display: block;
+            }
+
+            .lessons-read{
+                box-shadow: 2px 0px 6px 0px gray;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                display: inline-block;
+                width: 96px;
+                height: 40px;
+                padding-left: 10px;
+                margin: 8px;
+            }
+
+            .stars-collected{
+                box-shadow: 0px 0px 6px 0px gray;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                display: inline-block;
+                width: 96px;
+                height: 40px;
+                padding-left: 10px;
+                margin: 8px;
+            }
+            .quiz-points{
+                box-shadow: 2px 0px 6px 0px green;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                display: inline-block;
+                width: 96px;
+                height: 40px;
+                padding-left: 10px;
+                margin: 8px;
+            }
+
+            .exercise-points{
+                box-shadow: 2px 0px 6px 0px yellow;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                display: inline-block;
+                width: 96px;
+                height: 40px;
+                padding-left: 10px;
+                margin: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top-content">
+                <h4>Good job!</h4>
+                <p>Your score</p>
+            </div>
+
+            <div class="center-content">
+                <div class="circle">
+                    <div style="font-weight: bold; font-size: 30px; text-align: center;">1531</div>
+                    <div style="font-size: 15px; text-align: center;">points</div>
+                </div>
+                <div class="cakal"></div>
+            </div>
+
+            <div class="score-factors">
+                Score factors
+            </div>
+
+            <div class="footer">
+                <div class="lessons-read">
+                    <div style="font-weight: bold;">823</div>
+                    <div style="opacity: 0.7;">lessons read</div>
+                </div>
+
+                <div class="stars-collected">
+                    <div style="font-weight: bold;">11 *</div>
+                    <div style="opacity: 0.7;">stars collected</div>
+                </div>
+
+                <div class="quiz-points">
+                    <div style="font-weight: bold;">560</div>
+                    <div style="opacity: 0.7;">quiz points</div>
+                </div>
+
+                <div class="exercise-points">
+                    <div style="font-weight: bold;">148</div>
+                    <div style="opacity: 0.7;">exercise points</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

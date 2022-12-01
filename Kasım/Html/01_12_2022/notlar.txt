@@ -1,0 +1,15 @@
+1- Box-sizing: İçerde yapılan değişiklikler, genişlik ve yüksekliğe dahil olsun demek.
+Box-sizing vermezsek iki div'in de boyutları eşit olmasına rağmen, alttaki div'in boyutları bozuluyor.
+
+KODLAR: Örnek1.html
+
+############################################################################################################
+
+2- Box-shadow: Gölgelendirme yapar.
+
+box-shadow: (yatay)px (dikey)px (blur)px (spread)px değerleri alır.
+
+
+KODLAR: Örnek2.html
+############################################################################################################
+

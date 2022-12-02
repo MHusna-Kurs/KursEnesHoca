@@ -1,0 +1,31 @@
+transition konusu: ease - ease in falan w3'den bak.
+
+ease: başı yavaş, ortası hızlı, sonu yavaş
+
+ease-in: başlangıcı yavaş, sonu hızlı
+ease-out: başlangıcı hızlı, sonu yavaş
+
+transition-timing-function: ease-in; ile kullanabiliriz.
+
+SANİYE OLARAK DÜŞÜN !!
+
+transition-delay -> transition'u geciktir.
+
+transition: width 2s linear 1s;
+
+2sn içinde genişle, linear şeklinde 1s bekledikten sonra.
+
+############################################################################################################
+
+animation-iteration-count -> Bu animasyon kaç kere çalışsın demek.
+animation-direction: reverse -> Tam tersi istikamette hareket ettirir.
+		     alternate-reverse gibi değerleri var. Bunları görmek için iteration-count'u 2 ver ki
+		     anlaşılsın.
+animation-fill-mode: Animasyon başladığı noktaya dönsün mü dönmesin mi karar verir.
+
+2D Transforms Metotlar
+----------------------
+
+            transform: scale(2,1);
+
+            transform: scale(50%, 50%);

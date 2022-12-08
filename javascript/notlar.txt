@@ -1,0 +1,351 @@
+prompt -> açılan penceredekini ekrana yazdırmak için.
+
+<body>
+    <script>
+        var text = prompt();
+        document.write(text);
+    </script>
+</body>
+
+##########################################################################################################
+<body>
+    <script>
+        for(var i=0; i<10; i++){
+            document.write(i+"<br>");
+        }
+    </script>
+</body>
+
+##########################################################################################################
+<body>
+    <script>
+        for(var i=0; i<10; i++){
+           document.write("<div style='border:1px solid black; padding:10px'>"+i+"</div>");
+        }
+    </script>
+</body>
+
+##########################################################################################################
+--> Değer göndermeyen fonksiyon yapısı.
+<body>
+    <script>
+        var metin = prompt();
+        ekranaYaz(metin);
+        function ekranaYaz(mtn){
+            document.write(mtn);
+        }
+    </script>
+</body>
+
+##########################################################################################################
+--> Değer gönderen fonksiyon yapısı.
+<body>
+    <script>
+        var sonuc = ekranaYaz();
+        document.write(sonuc);
+        
+        function ekranaYaz(){
+            var metin = prompt();
+            return metin;
+        }
+    </script>
+</body>
+
+##########################################################################################################
+					BENİM ÖRNEĞİM
+##########################################################################################################
+<body>
+    <script>
+        var metin = degerGetir();
+        document.write(metin);
+        
+        function degerGetir(){
+            return prompt();
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+*parseInt kullanımına bak.
+
+##########################################################################################################
+
+
+<body>
+    <script>
+        var sayi1 = parseInt(prompt("1. sayıyı gir: "));
+        var sayi2 = parseInt(prompt("2. sayıyı gir: "));
+        
+        if(sayi1 != null && sayi2 != null){
+            topla(sayi1, sayi2);
+        }
+
+        function topla(x, y){
+            //var sonuc = x + y;
+            //document.write(sonuc);
+            document.write(x + y);
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body>
+    <input type="button" value="Tıkla" onclick="alert('merhaba')">
+</body>
+
+##########################################################################################################
+
+<body>
+    <input type="button" value="Tıkla" onclick="ekranaYaz()">
+    
+    <script>
+        function ekranaYaz(){
+            document.write("merhaba");
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body>
+    <input type="button" value="Tıkla" ondblclick="ekranaYaz()">
+    
+    <script>
+        function ekranaYaz(){
+            document.write("merhaba");
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body onload="alert('yükleniyor...')">
+    <input type="button" value="Tıkla" ondblclick="ekranaYaz('merhaba')">
+    
+    <script>
+        function ekranaYaz(msg){
+            document.write(msg);
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body onload="alert('yükleniyor...')">
+
+    isim: <input type="text" onfocus="alert('lütfen isim giriniz.')">
+    <input type="button" value="Tıkla" ondblclick="ekranaYaz('merhaba')">
+    
+    <script>
+        function ekranaYaz(msg){
+            document.write(msg);
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body onload="alert('yükleniyor...')">
+
+    isim: <input type="text" onblur="alert('ayrıldınız')">
+    <input type="button" value="Tıkla" ondblclick="ekranaYaz('merhaba')">
+    
+    <script>
+        function ekranaYaz(msg){
+            document.write(msg);
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body onload="alert('yükleniyor...')">
+
+    isim: <input type="text" onblur="alert('ayrıldınız')">
+    <input type="button" value="Tıkla" ondblclick="ekranaYaz('merhaba')">
+    <img src="photo.jpg" height="200px" width="200px" onmouseover="alert('üzerindesin')">
+
+    <script>
+        function ekranaYaz(msg){
+            document.write(msg);
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body>
+    <img src="photo.jpg" height="200px" width="200px" onmouseout="alert('gittin')">
+</body>
+
+##########################################################################################################
+--> Üzerinde gezildiğinde çalışır.
+<body>
+    <img src="photo.jpg" height="200px" width="200px" onmousemove="alert('resim üzerinde gezindin')">
+</body>
+
+##########################################################################################################
+
+--> Üzerine basıldığı anda çalışır.
+<body>
+    <img src="photo.jpg" height="200px" width="200px" onmousedown="alert('resim üzerinde gezindin')">
+</body>
+
+##########################################################################################################
+
+<body>
+    <img src="photo.jpg" height="200px" width="200px" onmouseup="alert('resim üzerinde gezindin')">
+</body>
+
+##########################################################################################################
+
+<body>
+    isim: <input type="text" onkeydown="alert('ekrana birşey girdiniz.');">
+    <input type="button" value="Tıkla">
+</body>
+
+##########################################################################################################
+
+--> içeriğe bişey yazıp yazıyı seçince çalışır.
+<body>
+    isim: <input type="text" onselect="alert('ekrana birşey girdiniz.');">
+    <input type="button" value="Tıkla">
+</body>
+
+##########################################################################################################
+
+-->Ekran boyutu değişince çalışır.
+<body onresize="alert('Boyut değişti.');">
+</body>
+
+##########################################################################################################
+
+<body>
+    <script>
+        var result=confirm("Çıkmak istediğinizden emin misiniz ?");
+        if(result){
+            alert("Gitmee sana muhtacım.");
+            window.close();
+            window.open("https://www.google.com");
+        }
+        else{
+            alert(":DDDDD");
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+--> Ara çalışmadı, çok da fifiymiş.
+<body>
+    <input type="button" value="Yazdır" onclick="window.print()">
+    <input type="button" value="Ara" onclick="window.find();">
+</body>
+
+##########################################################################################################
+
+<body>
+    <div id="yazi">bugün çok dertliyim.</div>
+    <input type="button" value="Yazdır" onclick="getElement()">
+    <script>
+        function getElement(){
+            var element = document.getElementById("yazi");
+            console.log(element);
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body>
+    <div id="yazi">bugün çok dertliyim.</div>
+    <input type="button" value="Yazdır" onclick="getElement()">
+    <script>
+        function getElement(){
+            var element = document.getElementById("yazi");
+            var metin = element.innerHTML;
+            console.log(metin);
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body>
+    <div id="yazi">bugün çok dertliyim.</div>
+    <input type="button" value="Yazdır" onclick="getElement()">
+    <input type="button" value="Değiştir" onclick="putText('hala çok dertliyim.')">
+
+    <script>
+        function getElement(){
+            var element = document.getElementById("yazi");
+            var metin = element.innerHTML;
+            console.log(metin);
+        }
+
+        function putText(content){
+            var element = document.getElementById("yazi");
+            element.innerHTML = content;
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body>
+    <input id="name" type="text" placeholder="metin giriniz.." name="name">
+    <div id="yazi">bugün çok dertliyim.</div>
+    <input type="button" value="Yazdır" onclick="getInputValue('name')">
+    <input type="button" value="Değiştir" onclick="putText('hala çok dertliyim.')">
+
+    <script>
+        function getElement(){
+            var element = document.getElementById("yazi");
+            var metin = element.innerHTML;
+            console.log(metin);
+        }
+
+        function putText(content){
+            var element = document.getElementById("yazi");
+            element.innerHTML = content;
+        }
+
+        function getInputValue(id){
+            var input = document.getElementById(id);
+            console.log(input.value);
+        }
+    </script>
+</body>
+
+##########################################################################################################
+
+<body>
+    <input id="name" type="text" placeholder="metin giriniz.." name="name">
+    <div id="yazi">bugün çok dertliyim.</div>
+    <input type="button" value="Yazdır" onclick="getInputValue('name')">
+    <input type="button" value="Değiştir" onclick="putText('hala çok dertliyim.')">
+
+    <script>
+        function getElement(){
+            var element = document.getElementById("yazi");
+            var metin = element.innerHTML;
+            console.log(metin);
+        }
+
+        function putText(content){
+            var element = document.getElementById("yazi");
+            element.innerHTML = content;
+        }
+
+        function getInputValue(id){
+            var input = document.getElementById(id);
+            var element = document.getElementById("yazi");
+            element.innerHTML=input.value;
+        }
+    </script>
+</body>
+
+##########################################################################################################
+

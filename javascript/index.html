@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="name" type="text" placeholder="metin giriniz.." name="name">
+    <div id="yazi">bugün çok dertliyim.</div>
+    <input type="button" value="Yazdır" onclick="getInputValue('name')">
+    <input type="button" value="Değiştir" onclick="putText('hala çok dertliyim.')">
+
+    <script>
+        function getElement(){
+            var element = document.getElementById("yazi");
+            var metin = element.innerHTML;
+            console.log(metin);
+        }
+
+        function putText(content){
+            var element = document.getElementById("yazi");
+            element.innerHTML = content;
+        }
+
+        function getInputValue(id){
+            var input = document.getElementById(id);
+            var element = document.getElementById("yazi");
+            element.innerHTML=input.value;
+            element.style.backgroundColor="red";
+            element.style.width="150px";
+            element.style.lineHeight="50px";
+            element.style.color="white";
+            element.style.textAlign="center";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calisma 4</title>
+
+    <style>
+        #container{
+            border: 1px solid black;
+            height: 400px; 
+        }
+
+        .tableStyle{
+            border: 1px solid red;
+            width: 300px;
+            height: 100%;
+            border-collapse: collapse;
+        }
+
+        .tableRow{
+            border: 1px solid blue;
+            width: 100%;
+            height: 20%;
+        }
+
+        .tableData{
+            border: 1px solid green;
+            width: 33%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        var container = document.getElementById("container");
+        var table = document.createElement("table");
+        var tableRow = document.createElement("tr");
+
+        for(var column = 0; column < 3; column++){
+            var td = document.createElement("td");
+            td.className = "tableData";
+            td.innerHTML = (column+1)+" .sutun";
+            tableRow.appendChild(td);
+        }
+
+        table.className = "tableStyle";
+        tableRow.className = "tableRow";
+
+        table.appendChild(tableRow);
+        container.appendChild(table);
+    </script>
+</body>
+</html>

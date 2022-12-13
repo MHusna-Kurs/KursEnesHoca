@@ -1,0 +1,29 @@
+.active{
+    background-color: green;
+    font-weight: bold;
+}
+
+.container{
+    background-color: blue;
+    
+}
+
+.container ul{
+    padding: 0px;
+
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.container ul li a{
+    display: block;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+
+    width: 200px;
+    line-height: 50px;
+}

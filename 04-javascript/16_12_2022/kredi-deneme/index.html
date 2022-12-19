@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #container {
+        border: 1px solid black;
+        margin: 100px;
+        padding: 100px;
+
+        width: 200px;
+        height: 100px;
+      }
+
+      .keys {
+        border: 1px solid green;
+        margin: 5px;
+
+        display: flex;
+        width: 150px;
+        height: 50px;
+
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      span {
+        position: relative;
+        top: 0;
+        transition: 1s;
+      }
+
+    </style>
+  </head>
+
+    <body>
+        <div id="container">
+            <div class="keys">
+                <span>#</span>
+                <span>#</span>
+                <span>#</span>
+                <span>#</span>
+                <span>#</span>
+            </div>
+
+            <div class="keys" >
+                <span style="opacity: 0;">a</span>
+                <span style="opacity: 0;">b</span>
+                <span style="opacity: 0;">c</span>
+                <span style="opacity: 0;">d</span>
+                <span style="opacity: 0;">e</span>
+            </div>
+
+            <button onclick="kaydir();">TIKLAAAAA</button>
+        </div>
+
+        <script>
+
+            var container = document.getElementById("container");
+            var containerChildren = container.children;
+
+            var firstKeys = containerChildren[0];
+            var secondKeys = containerChildren[1];
+
+            var firstKeysSpans = firstKeys.children;
+            var secondKeysSpans = secondKeys.children;
+
+            async function kaydir() {
+
+                for(var i = 0; i < firstKeysSpans.length; i++){
+            
+                    firstKeysSpans[i].style.transform = "translateY(-35px)";
+                    firstKeysSpans[i].style.opacity = "0";
+
+
+                    secondKeysSpans[i].style.transform = "translateY(-57px)";
+                    secondKeysSpans[i].style.opacity = 1;
+                    await delay(200);
+                }
+            }
+
+            function delay(time){
+                return new Promise(resolve=>setTimeout(resolve,time));
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+
+    <style>
+        div{
+            width: 80px;
+            line-height: 50px;
+            background-color:green ;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div onclick="remove();">Tıkla</div>
+
+    <script>
+
+        function remove(){
+            var btn = document.querySelector("div");
+            btn.innerHTML="değişti";
+        }
+
+    </script>
+</body>
+</html>

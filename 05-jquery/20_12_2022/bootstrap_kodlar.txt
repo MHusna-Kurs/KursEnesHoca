@@ -1,0 +1,52 @@
+<body>
+    <div class="container-fluid p-2">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 col-sm-12" style="background-color: yellow;">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12" style="background-color: blue;">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12" style="background-color: blueviolet;">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12" style="background-color: red;">
+            <p>Lorem ipsum...</p>
+          </div>
+
+        </div>
+
+    </div>
+</body>
+
+###########################################################################################################
+
+<body>
+    <div class="container-fluid p-2">
+
+        <div class="row">
+
+          <div class="col-sm-4 col-12 bg-danger">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <div class="col-sm-4 col-12 bg-info">
+            <p>Lorem ipsum...</p>
+          </div>
+
+          <div class="col-sm-4 col-12 bg-success">
+            <p>Lorem ipsum...</p>
+          </div>
+
+        </div>
+
+    </div>
+</body>
+
+###########################################################################################################
+

@@ -1,0 +1,355 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+###########################################################################################################
+Normal alert message.
+
+<body>
+    <div class="alert alert-success">Success message</div>
+    <div class="alert alert-info">Info message</div>
+    <div class="alert alert-warning">Warning message</div>
+    <div class="alert alert-danger">Danger message</div>
+</body>
+
+###########################################################################################################
+Kapatılabilir alert message.
+
+<body>
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        Success message
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+###########################################################################################################
+Mesaj solarak gitsin.
+
+<body>
+    <div class="alert alert-success alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        Success message
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+###########################################################################################################
+Buton tipleri.
+
+<body>
+    
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+</body>
+
+###########################################################################################################
+Buton classları a, button ve input etiketleriyle de kullanılabilir.
+
+<body>
+
+  <a href="#" class="btn btn-success">Link Button</a>
+  <button type="button" class="btn btn-success">Button</button>
+  <input type="button" class="btn btn-success" value="Input Button">
+  <input type="submit" class="btn btn-success" value="Submit Button">
+  <input type="reset" class="btn btn-success" value="Reset Button">
+
+</body>
+
+###########################################################################################################
+Outline'lı butonlar.
+
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-info">Info</button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-danger">Danger</button>
+  <button type="button" class="btn btn-outline-dark">Dark</button>
+  <button type="button" class="btn btn-outline-light text-dark">Light</button>
+
+###########################################################################################################
+Butonlara farklı farklı boyutlar verme.
+
+<body>
+    
+    <div class="container mt-3">
+        <h2>Button Sizes</h2>
+        <button type="button" class="btn btn-primary btn-lg">Large</button>
+        <button type="button" class="btn btn-primary btn-md">Default</button>    
+        <button type="button" class="btn btn-primary btn-sm">Small</button>
+    </div>
+
+</body>
+
+###########################################################################################################
+d-grid önemli çünkü içinde bulunduğuna göre block level oluyor.
+
+  <div class="d-grid">
+    <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+  </div>
+
+###########################################################################################################
+Birden fazla block-level buton kullanıcaksak gap-* ile aralarındaki boşluğu ayarlayabiliriz.
+
+<div class="d-grid gap-3">
+  <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+  <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+  <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+</div>
+
+###########################################################################################################
+Active, butonun daha önce tıklanıp tıklanmadığını görmemizi sağlar.
+
+  <h2>Button States</h2>
+  <button type="button" class="btn btn-primary">Primary Button</button>
+  <button type="button" class="btn btn-primary active">Active Primary</button>
+  <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+  <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+
+###########################################################################################################
+Grup halinde butonlar. btn-group-lg, btn-group-sm gibi seçenekleri de var.
+btn-group yerine btn-group-vertical verirsen class'a alt alta sıralar.
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div>
+
+###########################################################################################################
+Sony'nin altında tekrar bir açılır menü var.
+
+<div class="btn-group">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Tablet</a></li>
+        <li><a class="dropdown-item" href="#">Smartphone</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+###########################################################################################################
+Badges-> Bildirim gelince kullanılan yapılar.
+
+<div class="container mt-3">
+  <h2>Contextual Badges</h2>
+  <span class="badge bg-primary">Primary</span>
+  <span class="badge bg-secondary">Secondary</span>
+  <span class="badge bg-success">Success</span>
+  <span class="badge bg-danger">Danger</span>
+  <span class="badge bg-warning">Warning</span>
+  <span class="badge bg-info">Info</span>
+  <span class="badge bg-light">Light</span>
+  <span class="badge bg-dark">Dark</span>
+</div>
+
+###########################################################################################################
+Bildirimin yuvarlak olmasını sağlıyor.
+
+<div class="container mt-3">
+  <h2>Pill Badges</h2>
+  <span class="badge rounded-pill bg-primary">Primary</span>
+  <span class="badge rounded-pill bg-secondary">Secondary</span>
+  <span class="badge rounded-pill bg-success">Success</span>
+  <span class="badge rounded-pill bg-danger">Danger</span>
+  <span class="badge rounded-pill bg-warning">Warning</span>
+  <span class="badge rounded-pill bg-info">Info</span>
+  <span class="badge rounded-pill bg-light">Light</span>
+  <span class="badge rounded-pill bg-dark">Dark</span>
+</div>
+
+###########################################################################################################
+Butonun içine bildirim ekleme.
+
+<button type="button" class="btn btn-primary">
+  Messages <span class="badge bg-danger">4</span>
+</button>
+
+###########################################################################################################
+Progress bar.
+
+<div class="progress" style="height:20px">
+  <div class="progress-bar" style="width:40%;height:20px"></div>
+</div>
+
+###########################################################################################################
+Stripped progress.
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped" style="width:40%"></div>
+</div>
+
+###########################################################################################################
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"></div>
+</div>
+
+###########################################################################################################
+İçiçe progress bar kullanımı.
+
+    <div class="progress">
+        <div class="progress-bar bg-success" style="width: 40%;">
+            SUCCESS
+        </div>
+        <div class="progress-bar bg-info" style="width: 20%;">
+            INFO    
+        </div>
+        <div class="progress-bar bg-danger" style="width: 20%;">
+            DANGER
+        </div>
+    </div>
+
+###########################################################################################################
+Yükleniyorken dönen şey.
+
+<div class="spinner-border"></div>
+
+###########################################################################################################
+Renkli spinner.
+
+  <div class="spinner-border text-muted"></div>
+  <div class="spinner-border text-primary"></div>
+  <div class="spinner-border text-success"></div>
+  <div class="spinner-border text-info"></div>
+  <div class="spinner-border text-warning"></div>
+  <div class="spinner-border text-danger"></div>
+  <div class="spinner-border text-secondary"></div>
+  <div class="spinner-border text-dark"></div>
+  <div class="spinner-border text-light"></div>
+
+###########################################################################################################
+Büyüyüp küçülen spinner fakat dönmüyor.
+
+  <div class="spinner-grow text-muted"></div>
+  <div class="spinner-grow text-primary"></div>
+  <div class="spinner-grow text-success"></div>
+  <div class="spinner-grow text-info"></div>
+  <div class="spinner-grow text-warning"></div>
+  <div class="spinner-grow text-danger"></div>
+  <div class="spinner-grow text-secondary"></div>
+  <div class="spinner-grow text-dark"></div>
+  <div class="spinner-grow text-light"></div>
+
+###########################################################################################################
+spinner-border-sm ve spinner-grow-sm gibi çeşitleri de var.
+###########################################################################################################
+Buton halinde spinner.
+
+<div class="container mt-3">
+  <h2>Spinner Buttons</h2>
+  <p>Add spinners to buttons:</p>
+                                        
+  <button class="btn btn-primary">
+    <span class="spinner-border spinner-border-sm"></span>
+  </button>
+
+  <button class="btn btn-primary">
+    <span class="spinner-border spinner-border-sm"></span>
+    Loading..
+  </button>
+  
+  <button class="btn btn-primary" disabled>
+    <span class="spinner-border spinner-border-sm"></span>
+    Loading..
+  </button>
+  
+  <button class="btn btn-primary" disabled>
+    <span class="spinner-grow spinner-grow-sm"></span>
+    Loading..
+  </button>
+</div>
+
+###########################################################################################################
+Sayfanın en altında çıkan sayfa numaralarını gösteren yer.
+
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+
+###########################################################################################################
+Previous butonuna tıklanmıyor.
+
+  <ul class="pagination">
+    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+
+###########################################################################################################
+pagination-lg, pagination-sm tipinde şekiller.
+
+<ul class="pagination pagination-lg">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+
+<ul class="pagination pagination-sm">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+
+###########################################################################################################
+Sağa sola ortaya koyma.
+
+<!-- Default (left-aligned) -->
+<ul class="pagination" style="margin:20px 0">
+  <li class="page-item">...</li>
+</ul>
+
+<!-- Center-aligned -->
+<ul class="pagination justify-content-center" style="margin:20px 0">
+  <li class="page-item">...</li>
+</ul>
+
+<!-- Right-aligned -->
+<ul class="pagination justify-content-end" style="margin:20px 0">
+  <li class="page-item">...</li>
+</ul>
+
+###########################################################################################################
+Hiyerarşik bir yapıda sayfanın yolunu gösterir.
+
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Photos</a></li>
+    <li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
+    <li class="breadcrumb-item"><a href="#">Italy</a></li>
+    <li class="breadcrumb-item active">Rome</li>
+  </ul>
+
+###########################################################################################################
+List grup.
+
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">First item</a>
+  <a href="#" class="list-group-item list-group-item-action">Second item</a>
+  <a href="#" class="list-group-item list-group-item-action">Third item</a>
+</div>
+
+###########################################################################################################
+
